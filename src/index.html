@@ -1,13 +1,17 @@
 ---
 layout: default
-title: Baraks website lololo
+title: Barak's website
 path: home
 ---
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
+<div
+  class="container mx-auto flex flex-col items-center justify-center lg:h-screen"
+>
   <h1>
     Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+    <strong
+      class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
+    >
       {{title}}
     </strong>
   </h1>
@@ -15,7 +19,7 @@ path: home
   <p>
     <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
     Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
+    <code class="bg-gray-100 p-1 text-blue-800">/index.njk</code>
   </p>
 
   {% include "./_includes/partials/content.html" %}
