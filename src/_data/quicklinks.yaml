@@ -1,14 +1,14 @@
----
 links:
   - title: Netlify CMS
-    url: "https://www.netlifycms.org/"
-    desc: Open source content management for your Git workflow
+    url: https://www.netlifycms.org/
+    desc: "Oh, yeah! We're like Luke and Leia! ...Uh, except no kissing part. "
   - title: Eleventy
-    url: "https://www.11ty.dev/"
-    desc: Eleventy is a simpler static site generator.
+    url: https://www.11ty.dev/
+    desc: To break it to you but what people call love is just a chemical reaction
+      that compels animals to breed.
   - title: Alpine.js
-    url: "https://github.com/alpinejs/alpine"
-    desc: A minimal framework for composing JavaScript behavior in your markup.
+    url: https://github.com/alpinejs/alpine
+    desc: You can call me Snowball, because my fur is pretty and white. Listen, Morty
   - title: Tailwind CSS
-    url: "https://tailwindcss.com/"
-    desc: A utility-first CSS framework for rapidly building custom designs.
+    url: https://tailwindcss.com/
+    desc: What's another famous brother–sister team? Snuffles was my slave name.
