@@ -1,13 +1,18 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
-  content: ["./**/*.html"],
+  content: ['./**/*.html'],
   theme: {
     container: {
-      center: true,
+      center: true
     },
     extend: {
       colors: {},
-    },
+      fontFamily: {
+        grotesk: ['"Manrope"', ...defaultTheme.fontFamily.sans]
+      }
+    }
   },
   variants: {},
-  plugins: [require("@tailwindcss/typography")],
-};
+  plugins: [require('@tailwindcss/typography')]
+}
