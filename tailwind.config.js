@@ -1,8 +1,12 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const settingsScreens = require('./tailwind.settings.screens')
+const settingsFontSizes = require('./tailwind.settings.fontSizes')
 
 module.exports = {
   content: ['./**/*.html'],
   theme: {
+    screens: settingsScreens,
+    fontSize: settingsFontSizes,
     container: {
       center: true
     },

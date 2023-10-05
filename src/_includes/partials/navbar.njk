@@ -7,12 +7,7 @@
   >
     <!--Logo etc-->
     <div class="flex items-center">
-      <a
-        href="/"
-        class="bg-gradient-to-r from-green-500 to-lime-700 bg-clip-text text-lg font-bold text-transparent"
-      >
-        Barak's moni meiker</a
-      >
+      <a href="/"> Barak's</a>
     </div>
 
     <!--Toggle button (hidden on large screens)-->
@@ -42,6 +37,10 @@
       </svg>
     </button>
 
+
+    {% set currentUrl = page.url.slice(0, -1) %}
+
+
     <!--Menu-->
     <div
       class="w-full flex-grow text-center lg:flex lg:w-auto lg:items-center"
@@ -57,8 +56,9 @@
         <li class="nav__item mr-3">
           <a
             @click="isOpen = false"
-            class="text-ml inline-block px-4 py-2 text-gray-500 no-underline hover:text-green-800"
+            class="text-ml inline-block px-4 py-2 text-gray-500 hover:text-black {% if currentUrl === item.url %}text-red-700 hover:text-red-700 underline{% endif %}"
             href="{{ item.url }}"
+            {% if currentUrl === item.url %}aria-current="page"{% endif %}
             >{{ item.text }}</a
           >
         </li>
