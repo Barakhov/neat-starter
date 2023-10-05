@@ -25,11 +25,18 @@
     />
     {% endif %}
   </head>
-  <body>
-    {% include "./partials/navbar.njk" %} {{ content | safe }} {%
-    include"./partials/footer.html" %}
+  <body data-barba="wrapper">
+    {% include "./partials/navbar.njk" %}
+
+    <main data-barba="container">{{ content | safe }}</main>
+
+    {% include "./partials/footer.html" %}
 
     <script src="/static/js/alpine.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+
+    <script src="/static/js/main.js"></script>
 
     {% if path == "home" %}
     <!-- Netlify Identity Widget -->
@@ -39,5 +46,6 @@
       src="https://identity.netlify.com/v1/netlify-identity-widget.js"
     ></script>
     {% endif %}
+
   </body>
 </html>
