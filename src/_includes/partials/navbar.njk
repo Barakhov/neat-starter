@@ -56,10 +56,10 @@
         <li class="nav__item mr-3">
           <a
             @click="isOpen = false"
-            class="text-ml inline-block px-4 py-2 text-gray-500 hover:text-black {% if currentUrl === item.url %}text-red-700 hover:text-red-700 underline{% endif %}"
+            class="text-ml inline-block px-4 py-2 text-gray-500 hover:text-red-700 hover:underline {% if currentUrl === item.url %}text-red-700 underline{% endif %}"
             href="{{ item.url }}"
-            {% if currentUrl === item.url %}aria-current="page"{% endif %}
-            >{{ item.text }}</a
+            data-name="{{ item.text | lower }}"
+            >{{ item.text | upper }}</a
           >
         </li>
         {% endfor %}

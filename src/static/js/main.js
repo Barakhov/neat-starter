@@ -1,7 +1,8 @@
+barba.use(barbaCss)
+
 barba.init({
   transitions: [
     {
-      name: 'default-transition',
       leave() {
         // create your stunning leave animation here
         console.log('adios')

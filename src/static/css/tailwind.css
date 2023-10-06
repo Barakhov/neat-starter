@@ -28,3 +28,54 @@ body pre[class*="language-"] {
   @apply bg-gray-800;
 }
 */
+
+
+.barba-leave {
+  opacity: 1;
+}
+
+.barba-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.barba-leave-to {
+  opacity: 1;
+}
+
+.barba-enter {
+  opacity: 1;
+}
+
+.barba-enter-active {
+  transition: opacity 0.5s ease;
+}
+
+.barba-enter-to {
+  opacity: 1;
+}
+
+/***/
+
+.barba-leave .main-inner {
+  opacity: 1;
+}
+
+.barba-leave-active .main-inner {
+  transition: opacity 0.5s ease;
+}
+
+.barba-leave-to .main-inner {
+  opacity: 0;
+}
+
+.barba-enter .main-inner {
+  opacity: 0;
+}
+
+.barba-enter-active .main-inner {
+  transition: opacity 0.5s ease;
+}
+
+.barba-enter-to .main-inner {
+  opacity: 1;
+}
