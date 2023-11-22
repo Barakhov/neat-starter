@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"id="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -25,10 +25,9 @@
     />
     {% endif %}
   </head>
-  <body data-barba="wrapper">
+  <body class="bg-slate-100 dark:bg-slate-700">
 
-
-    <main data-barba="container" data-barba-namespace="{{path}}" class="min-h-screen flex flex-col">
+    <main class="min-h-screen flex flex-col">
       {% include "./partials/navbar.njk" %}
 
       <div class="main-inner">
@@ -38,12 +37,7 @@
       {% include "./partials/footer.njk" %}
     </main>
 
-
     <script src="/static/js/alpine.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@barba/css"></script>
-
 
     <script src="/static/js/main.js"></script>
 
