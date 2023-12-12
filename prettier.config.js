@@ -4,11 +4,11 @@ const config = {
   useTabs: false,
   semi: false,
   singleQuote: true,
-  trailingComma: "none",
+  trailingComma: 'none',
   bracketSpacing: false,
   jsxBracketSameLine: false,
-  plugins: ["prettier-plugin-tailwindcss"],
-  tailwindConfig: "./tailwind.config.js",
-};
+  plugins: ['prettier-plugin-tailwindcss'],
+  tailwindConfig: './tailwind.config.js'
+}
 
-module.exports = config;
+module.exports = config

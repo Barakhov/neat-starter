@@ -58,4 +58,6 @@ npm run start
 
 Surjith S M ( [@surjithctly](https://surjithctly.in/) )
 
+## Comando para el CMS:
+
 npx netlify-cms-proxy-server

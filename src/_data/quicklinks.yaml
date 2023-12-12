@@ -4,12 +4,14 @@ links:
     desc: "Oh, yeah! We're like Luke and Leia! ...Uh, except no kissing part. "
   - title: Eleventy
     url: https://www.11ty.dev/
-    desc: What people call love is just a chemical reaction that compels animals to
+    desc:
+      What people call love is just a chemical reaction that compels animals to
       breed.
   - title: Alpine.js
     url: https://github.com/alpinejs/alpine
     desc: You can call me Snowball, because my fur is pretty and white.
   - title: Tailwind CSS
     url: https://tailwindcss.com/
-    desc: What people call love is just a chemical reaction that compels animals to
+    desc:
+      What people call love is just a chemical reaction that compels animals to
       breed.

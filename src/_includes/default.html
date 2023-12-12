@@ -1,46 +1,37 @@
 <!doctype html>
-<html lang="en"id="html">
+<html lang="en" id="html" class="scroll-pt-4 scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{title}}</title>
+    <title>{{ title }}</title>
     {% if description %}
-    <meta name="description" content="{{description}}" />
+    <meta name="description" content="{{ description }}" />
     {% endif %} {% block head %}{% endblock %}
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
     {% if prism == true %}
     <link
       rel="stylesheet"
       type="text/css"
-      href="/static/css/prism-tomorrow.css"
+      href="/static/css/prism-okaidia.css"
     />
     {% endif %}
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body class="bg-slate-100 dark:bg-slate-700">
-
-    <main class="min-h-screen flex flex-col">
-      {% include "./partials/navbar.njk" %}
-
-      <div class="main-inner">
-        {{ content | safe }}
-      </div>
-
-      {% include "./partials/footer.njk" %}
+    <main class="flex min-h-screen flex-col">
+      {% include "./partials/navbar.html" %}
+      <div class="main-inner">{{ content | safe }}</div>
+      {% include "./partials/footer.html" %}
     </main>
-
     <script src="/static/js/alpine.js"></script>
-
     <script src="/static/js/main.js"></script>
-
     {% if path == "home" %}
     <!-- Netlify Identity Widget -->
     <!-- Needed only if you are using Netlify Identity feature -->
@@ -49,6 +40,5 @@
       src="https://identity.netlify.com/v1/netlify-identity-widget.js"
     ></script>
     {% endif %}
-
   </body>
 </html>

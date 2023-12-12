@@ -11,19 +11,42 @@
   }
 }
 
-
 h1 {
-  @apply text-4xl tracking-tighter mb-3 text-center;
+  @apply mb-3 text-center text-4xl tracking-tighter;
 }
 
 h3 {
-  @apply text-2xl font-bold mb-3;
+  @apply mb-3 text-2xl font-bold;
+}
+
+.aside-nav-item {
+  @apply mb-2 inline-block leading-6 hover:underline dark:text-gray-200;
+}
+
+ul ul .aside-nav-item {
+  @apply pl-3;
 }
 
 html.dark .moon,
 html:not(.dark) .sun {
   display: none;
 }
+
+.balanced {
+  white-space: unset;
+  text-wrap: balance;
+}
+
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+  background: #1e293b !important;
+}
+
+/*
+.dark .prose {
+  @apply text-gray-200
+}
+*/
 
 /* Syntax Highlighting*/
 /*

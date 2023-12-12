@@ -27,8 +27,8 @@ module.exports = function (eleventyConfig) {
     './src/admin/config.yml': './admin/config.yml',
     './node_modules/alpinejs/dist/cdn.min.js': './static/js/alpine.js',
     './src/static/js/main.js': './static/js/main.js',
-    './node_modules/prismjs/themes/prism-tomorrow.css':
-      './static/css/prism-tomorrow.css'
+    './node_modules/prismjs/themes/prism-okaidia.css':
+      './static/css/prism-okaidia.css'
   })
 
   // Copy Image Folder to /_site

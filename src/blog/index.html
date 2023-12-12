@@ -1,31 +1,37 @@
 ---
-layout: blog
+title: Anotaciones y snippets
+layout: default
+path: blog
 ---
 
-<section class="mt-15">
-  {% set postslist = collections.post %} {% for post in postslist | reverse %}
-  <article class="my-8">
-    <h2 class="mb-2 text-3xl font-bold text-gray-900">
-      <a href="{{ post.url | url }}">
-        {% if post.data.title %} {{ post.data.title }} {% else %} Untitled {%
-        endif %}
-      </a>
-    </h2>
-    <p class="mb-3 text-base leading-6 text-gray-500">
-      <time>
-        {{ post.date | readableDate }} by
-        <a>{{ post.data.author }}</a>
-      </time>
-    </p>
-    {% if post.data.description %}
-    <p class="mb-3 text-lg text-gray-500">{{ post.data.description }}</p>
-    {% endif %}
+<div class="container mt-6 max-w-3xl px-6">
+  <h1 class="mb-10 text-5xl font-bold">{{title}}</h1>
+  <img class="mb-10" src="/static/img/stole-code-meme.png" />
+  <section class="mt-15">
+    {% set postslist = collections.post %} {% for post in postslist | reverse %}
+    <article class="my-8">
+      <h2 class="mb-2 text-3xl font-bold text-gray-900">
+        <a href="{{ post.url | url }}">
+          {% if post.data.title %} {{ post.data.title }} {% else %} Untitled {%
+          endif %}
+        </a>
+      </h2>
+      <p class="mb-3 text-base leading-6 text-gray-500">
+        <time>
+          {{ post.date | readableDate }} by
+          <a>{{ post.data.author }}</a>
+        </time>
+      </p>
+      {% if post.data.description %}
+      <p class="mb-3 text-lg text-gray-500">{{ post.data.description }}</p>
+      {% endif %}
 
-    <p>
-      <a href="{{ post.url | url }}" class="text-lg font-bold text-green-600">
-        dale →
-      </a>
-    </p>
-  </article>
-  {% endfor %}
-</section>
+      <p>
+        <a href="{{ post.url | url }}" class="text-lg font-bold">
+          read this →
+        </a>
+      </p>
+    </article>
+    {% endfor %}
+  </section>
+</div>

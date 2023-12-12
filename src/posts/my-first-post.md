@@ -8,6 +8,7 @@ tags:
   - center
   - right
 ---
+
 # This is a Heading h1
 
 ## This is a Heading h2
@@ -22,23 +23,23 @@ tags:
 
 ## Emphasis
 
-*This text will be italic*\
-*This will also be italic*
+_This text will be italic_\
+_This will also be italic_
 
 **This text will be bold**\
 **This will also be bold**
 
-*You **can** combine them*
+_You **can** combine them_
 
 ## Lists
 
 ### Unordered
 
-* Item 1
-* Item 2
+- Item 1
+- Item 2
 
-  * Item 2a
-  * Item 2b
+  - Item 2a
+  - Item 2b
 
 ### Ordered
 
@@ -63,4 +64,4 @@ You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
 
 This web site is using `markedjs/marked`.
 
-![ertert](/static/img/video-game-northgard-wallpaper-599058bdf1aaedbb9607384fd0f126cd.jpg "wetrwert")
+![ertert](/static/img/video-game-northgard-wallpaper-599058bdf1aaedbb9607384fd0f126cd.jpg 'wetrwert')
