@@ -29,7 +29,7 @@ module.exports = function (eleventyConfig) {
     './node_modules/prismjs/themes/prism-okaidia.css':
       './static/css/prism-okaidia.css',
     './src/static/js/partials/headings.js': './static/js/partials/headings.js',
-    './src/static/js/partials/theme.js': './static/js/partials/theme.js',
+    './src/static/js/theme.js': './static/js/theme.js',
     './src/static/js/main.js': './static/js/main.js'
   })
 
