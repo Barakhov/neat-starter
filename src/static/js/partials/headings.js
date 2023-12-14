@@ -1,4 +1,3 @@
-// headings.js
 export function generateHeadingsIds() {
   document.addEventListener('DOMContentLoaded', function () {
     const articleContent = document.getElementById('article-content')
@@ -9,7 +8,7 @@ export function generateHeadingsIds() {
       const linkList = document.createElement('ul')
       const asideNav = document.getElementById('aside-nav')
 
-      let currentList = linkList // Keep track of the current list to handle nesting
+      let currentList = linkList
 
       headings.forEach(function (heading) {
         const headingText = heading.textContent
@@ -35,17 +34,14 @@ export function generateHeadingsIds() {
 
         linkListItem.appendChild(headingLink)
 
-        // Check the level of the heading
         if (heading.tagName === 'H2') {
-          // If it's H2, close any existing nested list
           currentList = linkList
           currentList.appendChild(linkListItem)
         } else if (heading.tagName === 'H3') {
-          // If it's H3, create a nested ul
           const nestedList = document.createElement('ul')
           nestedList.appendChild(linkListItem)
           currentList.lastChild.appendChild(nestedList)
-          currentList = nestedList // Update currentList for further nesting
+          currentList = nestedList
         }
       })
 

@@ -20,7 +20,7 @@ h3 {
 }
 
 .aside-nav-item {
-  @apply mb-2 inline-block leading-6 hover:underline dark:text-gray-200;
+  @apply mb-2 inline-block leading-6 hover:underline dark:text-zinc-200;
 }
 
 ul ul .aside-nav-item {
@@ -37,14 +37,14 @@ html:not(.dark) .sun {
   text-wrap: balance;
 }
 
-:not(pre) > code[class*='language-'],
+/* :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
   background: #1e293b !important;
-}
+} */
 
 /*
 .dark .prose {
-  @apply text-gray-200
+  @apply text-zinc-200
 }
 */
 
@@ -52,6 +52,26 @@ pre[class*='language-'] {
 /*
 body :not(pre)>code[class*="language-"],
 body pre[class*="language-"] {
-  @apply bg-gray-800;
+  @apply bg-zinc-800;
 }
 */
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

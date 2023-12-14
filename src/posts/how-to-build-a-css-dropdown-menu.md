@@ -9,7 +9,6 @@ date: 2023-12-05T22:27:46.730Z
 tags:
   - Tags
 ---
-
 The following snippet demonstrates how to build a dropdown menu with CSS (no JavaScript) that maintains its state when clicked. The special sauce in this demo is the [:focus-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within) pseudo selector, which allows the dropdown to stay open when its child links are clicked.
 
 ## Step 1: Start with a Navigation Bar
@@ -112,3 +111,5 @@ When any of the `<a>` elements in the dropdown are focused (by being clicked),
   pointer-events: auto;
 }
 ```
+
+#### [L﻿ive demo](https://codepen.io/barakhov/pen/dyawNdX)
