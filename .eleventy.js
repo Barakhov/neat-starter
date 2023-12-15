@@ -26,6 +26,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     './src/admin/config.yml': './admin/config.yml',
     './node_modules/alpinejs/dist/cdn.min.js': './static/js/alpine.js',
+    './node_modules/@studio-freight/lenis/bundled/lenis.min.js':
+      './static/js/lenis.js',
     './node_modules/prismjs/themes/prism-okaidia.css':
       './static/css/prism-okaidia.css',
     './src/static/js/partials/headings.js': './static/js/partials/headings.js',

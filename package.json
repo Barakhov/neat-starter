@@ -26,6 +26,7 @@
     "tailwindcss": "^3.0.13"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.29",
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.5"
   }

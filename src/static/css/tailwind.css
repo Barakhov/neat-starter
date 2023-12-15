@@ -2,22 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/*Your Custom CSS Goes here*/
-
 @layer base {
   html {
     font-family: 'Manrope', system-ui, sans-serif;
-    /*font-size: 16px;*/
   }
 }
 
-h1 {
-  @apply mb-3 text-center text-4xl tracking-tighter;
+@layer utilities {
+  .balanced {
+    white-space: unset;
+    text-wrap: balance;
+  }
 }
 
-h3 {
-  @apply mb-3 text-2xl font-bold;
-}
+/* Blog post aside nav */
 
 .aside-nav-item {
   @apply mb-2 inline-block leading-6 hover:underline dark:text-zinc-200;
@@ -27,34 +25,21 @@ ul ul .aside-nav-item {
   @apply pl-3;
 }
 
+/* Theme icons in navbar */
+
 html.dark .moon,
 html:not(.dark) .sun {
   display: none;
 }
 
-.balanced {
-  white-space: unset;
-  text-wrap: balance;
-}
-
-/* :not(pre) > code[class*='language-'],
-pre[class*='language-'] {
-  background: #1e293b !important;
-} */
-
-/*
-.dark .prose {
-  @apply text-zinc-200
-}
-*/
-
 /* Syntax Highlighting*/
-/*
-body :not(pre)>code[class*="language-"],
-body pre[class*="language-"] {
+
+body :not(pre) > code[class*='language-'],
+body pre[class*='language-'] {
   @apply bg-zinc-800;
 }
-*/
+
+/* Lenis */
 
 html.lenis {
   height: auto;

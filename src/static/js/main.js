@@ -28,7 +28,7 @@ generateHeadingsIds()
 //   window.addEventListener('scroll', debouncedScrollHandler)
 // })
 
-const lenis = new Lenis({lerp: 0.075, smooth: true})
+const lenis = new Lenis({lerp: 0.05, smooth: true})
 
 lenis.on('scroll', (e) => {
   console.log(e)
