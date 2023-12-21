@@ -60,3 +60,20 @@ html.lenis {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+/***********/
+
+.cursor {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  mix-blend-mode: difference;
+  position: fixed;
+  top: 0;
+  left: 0;
+  will-change: transform;
+  pointer-events: none;
+
+  z-index: 100;
+}

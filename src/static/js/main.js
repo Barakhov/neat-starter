@@ -3,30 +3,70 @@ import {generateHeadingsIds} from './partials/headings.js'
 // Generate IDs for headings
 generateHeadingsIds()
 
-// const headerScrolledClass = 'header--blur'
+gsap.set('.cursor', {force3D: true})
+document.addEventListener('mousemove', (e) => {
+  let x = e.clientX
+  let y = e.clientY
 
-// function handleHeaderClass(header) {
-//   header.classList.toggle(headerScrolledClass, window.scrollY > 0)
-// }
+  gsap.to('.cursor', {
+    x: x - 12,
+    y: y - 12,
+    ease: 'slow(0.7,0.7,false)'
+  })
+})
 
-// // Simple debounce function
-// function debounce(func, delay) {
-//   let timeoutId
-//   return function () {
-//     clearTimeout(timeoutId)
-//     timeoutId = setTimeout(func, delay)
-//   }
-// }
+document.body.addEventListener('mouseleave', () => {
+  gsap.to('.cursor', {
+    scale: 0,
+    duration: 0.1,
+    ease: 'none',
+    backgroundColor: 'black'
+  })
+})
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   const header = document.getElementById('header')
+document.body.addEventListener('mouseenter', () => {
+  gsap.to('.cursor', {
+    scale: 1,
+    duration: 0.1,
+    ease: 'none',
+    backgroundColor: 'white'
+  })
+})
 
-//   const debouncedScrollHandler = debounce(function () {
-//     handleHeaderClass(header)
-//   }, 10)
+let hoverCursors1 = document.querySelectorAll('[data-cursor="hover-1"]')
+let hoverCursors2 = document.querySelectorAll('[data-cursor="hover-2"]')
 
-//   window.addEventListener('scroll', debouncedScrollHandler)
-// })
+hoverCursors1.forEach(function (cursor) {
+  cursor.addEventListener('mouseenter', () => {
+    gsap.to('.cursor', {
+      scale: 2
+    })
+  })
+
+  cursor.addEventListener('mouseleave', () => {
+    gsap.to('.cursor', {
+      scale: 1
+    })
+  })
+})
+hoverCursors2.forEach(function (cursor) {
+  cursor.addEventListener('mouseenter', () => {
+    gsap.to('.cursor', {
+      scale: 1.5,
+      backgroundColor: '#ff0000',
+      borderRadius: '0%'
+    })
+  })
+  cursor.addEventListener('mouseleave', () => {
+    gsap.to('.cursor', {
+      scale: 1,
+      backgroundColor: 'white',
+      borderRadius: '50%'
+    })
+  })
+})
+
+/********/
 
 const lenis = new Lenis({lerp: 0.05, smooth: true})
 

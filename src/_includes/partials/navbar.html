@@ -10,7 +10,10 @@
   >
     <!--Logo etc-->
     <div class="flex items-center">
-      <a class="px-4 py-1 text-zinc-900 dark:text-zinc-100" href="/"
+      <a
+        class="px-4 py-1 text-zinc-900 dark:text-zinc-100"
+        href="/"
+        data-cursor="hover-1"
         >BARAKHOV</a
       >
     </div>
@@ -56,7 +59,7 @@
         class="list-reset flex-1 items-center justify-end pt-6 lg:flex lg:pt-0"
       >
         {% for item in navigation.items %}
-        <li class="nav__item ml-3">
+        <li class="nav__item ml-3" data-cursor="hover-1">
           <a
             @click="isOpen = false"
             class="text-ml {% if currentUrl === item.url %}underline{% endif %} inline-block px-4 py-1 text-zinc-900 hover:underline dark:text-zinc-100"
@@ -66,7 +69,7 @@
           >
         </li>
         {% endfor %}
-        <li class="flex px-4">
+        <li class="flex px-4" data-cursor="hover-2">
           <button class="btn-toggle text-zinc-900 dark:text-zinc-100">
             <svg
               class="sun"
